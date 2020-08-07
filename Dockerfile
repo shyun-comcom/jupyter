@@ -13,4 +13,4 @@ RUN pip install --quiet --no-cache-dir \
 
 ADD ./fasion-mnist.ipynb /home/jovyan/work
 
-CMD ["start-notebook.sh --ip='*' --NotebookApp.token='' --NotebookApp.password=''"]
+CMD ["bash", "-c", "start-notebook.sh --ip='*' --NotebookApp.token='' --NotebookApp.password=''"]
